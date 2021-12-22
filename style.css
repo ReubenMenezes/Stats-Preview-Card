@@ -1,0 +1,59 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+/* Basic Resets */
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+img{
+    max-width: 100%; 
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+
+body{
+   background-color:hsl(233, 47%, 7%);
+   font-size: 15px;
+   /* Centering the card */
+   height:100vh;
+   display:flex;
+    max-width: 52rem;
+    margin: auto;
+   align-items:center;
+}
+
+/* Start of the card styling */
+
+.card{
+    background-color:hsl(244, 38%, 16%);
+    display:grid;
+    font-family: 'Inter','sans-serif';
+    grid-template-columns: repeat(2,1fr);
+}
+
+.card__heading{
+    color: hsl(0, 0%, 100%);
+}
+
+.card__heading--purple{
+    color: darkviolet;
+}
+
+.card__description{
+    color:hsla(0, 0%, 100%, 0.75);
+}
+
+.card__left{
+    width:400px;
+}
+.card__right{
+    width:400px;
+    background-image:url('images/image-header-desktop.jpg');
+    background-color: hsl(277, 64%, 61%);
+    background-blend-mode: multiply;
+    width:500px;
+    height:425px;
+}
